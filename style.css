@@ -1,0 +1,647 @@
+@font-face {
+    font-family: anu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: anu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: anu;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #EFEAE3;
+} 
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+     transition: all ease 0.5s; 
+     display: flex;
+     align-items: center;
+     justify-content: center ;
+     font-weight: 100;
+    
+}
+
+
+#loader li{
+color:white;
+font-size: 3vw;
+position: absolute;
+opacity: 0;
+animation-name: load;
+animation-duration: 0.3s;
+animation-delay: 0.2s;
+animation-timing-function: linear;
+}
+
+#loader li:nth-child(2){
+animation-delay: 0.5s;
+}
+#loader li:nth-child(3){
+    animation-delay: 0.8s;
+        }
+
+#loader li:nth-child(4){
+animation-delay: 1.1s;
+    }
+#loader li:nth-child(5){
+    animation-delay: 1.4s;
+    }   
+
+
+    #loader li:nth-child(6){
+        animation-delay: 1.7s;
+        }
+        
+        
+        #loader li:nth-child(7){
+            animation-delay: 2s;
+            }
+            
+           
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#AboutPage{
+    background-color: #EFEAE3;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    /* parent ko relative dena is a good practice (uske children control mein rhenge usse)*/
+    position: relative;
+    padding: 0 2vw;
+}
+nav p{
+    font-size: 1vw;
+    color: #000000bb;
+    display: flex;
+   gap: 2.1px;
+}
+
+
+nav{
+  padding: 2vw 0vw;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   position: relative;
+   z-index: 100;
+   justify-content: space-between; 
+}
+#navpart2{
+    display: flex;
+    align-items: center;
+    gap: 1vw; 
+  
+
+}
+#navpart2 h4 {
+text-decoration: none;
+z-index: 9;
+padding:10px 20px ;
+border: 1px solid rgba(0, 0, 0, 0.189);
+font-weight: 500;
+border-radius: 50px;
+color: #000000bb;
+font-weight: 500;
+font-size: 18px;
+position: relative;
+overflow: hidden;
+}
+ 
+ 
+#navpart2 h4::after{
+    content:" " ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+background-color: black;
+left: 0;
+bottom: -100%;
+border-radius: 50%;
+transition: all ease 0.4s;
+}
+
+#navpart2 h4:hover::after{
+bottom: 0;
+border-radius: 0;
+}
+#navpart2 h4 a {
+    color: #000000bb;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+    color: #fff;
+}
+
+#navpart2 h4:hover a {
+    color: #fff;
+}
+
+nav span{
+    color: #fe3f0ace
+}
+
+.icons{
+    position: relative;
+    width: 10vw;
+    height: 4vh;
+    display: flex;
+  background-color: #000;
+  gap: 5vw;
+}
+
+
+
+#center{
+height: 75vh;
+width: 100%;
+
+/* background-color: orange; */
+/* display:flex ; */
+
+/* align-items: flex-end; */
+/* justify-content: space-between; */
+border-bottom: 1px solid #000000;
+padding-bottom: 2.5vw;
+
+}
+#left {
+    display: flex;
+    position: relative;
+}
+
+#left h2{
+    font-size: 9vw;
+    color: #000000da;
+    padding-bottom: 4vw;
+    position: relative;
+    z-index: 9;
+}
+#left .circles{
+    position: absolute;
+    filter: blur(20px);
+    animation-name: Myanime;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    }
+
+@keyframes Myanime {
+    from {
+        transform: translate(20%, -20%) skew(0) ;
+    }
+
+    to {
+        transform: translate(-10%, 10%) skew(-3deg);
+    }
+}
+
+ #right {
+ text-align: right;
+ position: relative;
+ padding-left: 60vw;
+ 
+padding-right: 7.1vw;
+ 
+
+} 
+#right .paraWeb {
+    
+    font-size: 17px;
+   font-weight: 100;
+   font-family: Arial, Helvetica, sans-serif;
+ text-align: start;
+ width: 100%;
+
+    
+   } 
+   
+
+#right h3{
+    font-size: 4vw;
+    text-align: left;
+}
+.SecondPage{
+    /* border-top: 1px solid #000; */
+    width:100vw;
+    display: flex;
+    justify-content: space-around;
+  margin-top: 4vw ;  
+}
+.SecondPage .leftSecondPage h3{
+    margin-top: 1.3vw;
+    font-size: 4vw;
+    
+}
+.SecondPage .leftSecondPage{
+    width:30vw;
+   
+}
+.SecondPage .leftSecondPage p, pre{
+ padding: 1vw;
+ font-size: 20px;
+ font-weight: 100;
+}
+.rightPage{
+    position: relative;
+    border-radius: 30px;
+    margin-top: 2vw;
+    padding-left: 0;
+   
+}
+#imageAbout{
+    border-radius: 50%;
+    padding-right: 4vw;
+    margin-right: 4vw;
+}
+/* #hero-shape{
+    position: absolute;
+    width: 46vw;
+  height: 35vw; 
+    right: 0;
+    top: 70vh;
+  
+}
+
+#hero1{
+    background-color: #FE320A;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation-name: anime3;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+#hero2{
+    background: linear-gradient(#FE320A, #fe3f0a);
+
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+#hero3{
+    background: linear-gradient(#FE320A, #fe3f0a);
+    height: 30vw;
+    position: absolute;
+    width: 20vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 10%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+/* @keyframes anime3 {
+    from {
+        transform: translate(26%, -5%);
+    }
+
+    to {
+        transform: translate(10%, 10%);
+    }
+} */ 
+
+
+#page2{
+    min-width: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+#movingTexts h1{
+    font-size: 5vw;
+    display: inline-block;
+   
+}
+#movingTexts::-webkit-scrollbar{
+    display: none;
+}
+
+
+#movingTexts{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+
+#circle{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: #FE320A;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+margin-top: 7.2vw;
+border-top: 1px solid #f52b0374;
+    border-bottom: 1px solid #f52b0374;
+
+}
+@keyframes move  {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+
+}
+
+.circles{
+    background: linear-gradient(to top right, #f52c03, #ff671b);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top: 30%;
+}
+
+
+
+
+
+
+.border{
+    border: 0.5px solid #0000008c;
+    top: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 0;
+}
+
+#page3 h1{
+    font-size: 5vw !important;
+    text-align: center;
+    font-family: anu;
+}
+.elem {
+    height: 120px;
+    width: 100%;
+    position: relative;
+
+    border-bottom: 1px solid #38383864;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.elem h2 {
+    font-size: 2vw;
+    position: relative;
+    z-index: 9;
+    font-weight: 100;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+ #data-image{
+    object-fit: cover;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 10vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  
+    gap: 3vw;
+}
+#contact-left h1{
+    margin-bottom: 2vw;
+    font-size: 5vw;
+    text-align: center;
+   color: #fe3f0a;
+}
+
+
+
+
+.contact-inputs{
+    width: 32vw;
+    height: 4vw;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: rgba(128, 128, 128, 0.543);
+}
+
+#contact-left textarea{
+    height: 9vw ;
+    padding-top: 2vw;
+    border-radius:20px;
+    color: rgba(128, 128, 128, 0.543);
+}
+
+
+#contact-right img{
+ width: 30vw;
+}
+
+.contact-inputs:focus{
+    border:2px solid #fe3f0a;
+}
+.contact-inputs:placeholder{
+    color: #a9a9a9;
+}
+#contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    background-color: #fe3f0a;
+    color: #fff;
+    gap: 2vw;
+    border: none;
+    border-radius: 50px;
+
+}
+#contact-left ::placeholder{
+    font-size: 1vw;
+}
+
+.eye-white{
+    width: 170px;
+    height: 170px;
+    margin: 30px;
+    border-radius: 50% ;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .eye-ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 50% ;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    /* display: inline-block; */
+    overflow: hidden;
+    background-color: black;
+
+  }
+
+.Link1{
+    text-decoration: none;
+    color: black;
+    padding-left: 1vw;
+    font-size: 1vw;
+}
+
+.tech-icons1 li{
+font-weight: 100;
+gap: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
